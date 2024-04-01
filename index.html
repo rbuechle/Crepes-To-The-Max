@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"rel="stylesheet"/>
+    <link rel="stylesheet" href="./css_bBuechle/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="./javascript_bBuechle/script.js" defer></script>
+    
+    <title>Crepes to the Max - Home</title>
+  </head>
+
+  <body id="bs-override" class="d-flex flex-column">
+    <!-- Log In -->
+    <div id="overlay" class="hidden">
+      <div id="log-in" class="d-flex justify-content-center align-items-center">
+        <form class="w-50">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+          <div class="form-floating my-1">
+            <input type="text" class="form-control" id="username" placeholder="Username">
+            <label for="username">Username</label>
+          </div>
+          <div class="form-floating my-1">
+            <input type="password" class="form-control" id="password" placeholder="Password">
+            <label for="password">Password</label>
+          </div>
+          <div class="form-floating mt-3 d-flex gap-2">
+            <button id="signin-button" class="btn btn-primary w-100 py-2" type="button">Sign in</button>
+            <button id="cancel-button" class="btn btn-outline-primary" type="button">Cancel</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Crepes To The Max</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html">Menu</a>
+            </li>
+          </ul>
+      <div class="col-md-3 text-end">
+        <button id="login-button" type="button" class="btn btn-outline-primary">Admin Dashboard</button>
+        <button id="logout-button" type="button" class="btn btn-outline-primary hidden">Logout</button>
+      </div>
+      </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+    <header>
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="item-1">
+            <!-- Photo by Eileen lamb: https://www.pexels.com/photo/photo-of-crepe-beside-strawberry-3225499/ -->
+          </div>
+          <div class="carousel-item" id="item-2">
+            <!-- Photo by Eileen lamb: https://www.pexels.com/photo/strawberry-crepes-3225506/ -->  
+          </div>
+          <div class="carousel-item" id="item-3">
+            <!-- Photo by Cristian Mihaila: https://www.pexels.com/photo/close-up-shot-of-a-crepe-11653566/ -->    
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="flex-grow-1">
+      <div class="container d-flex justify-content-center align-items-center gap-5 my-5">
+        <div class="text-center p-1">
+          <h1 class="heroheader">Join Our Sweet Team!</h1>
+          <p>Are you ready to sprinkle a dash of joy into every customer's day? Do you have a passion for 
+            crafting delectable treats that leave taste buds tingling with delight? If so, we're looking 
+            for enthusiastic individuals to join our crepe-tastic team at Crepes To The Max!
+          </p>
+          <p>
+            At Crepe To The Max, we don't just make crepes; we create experiences. Each crepe is a work of art, 
+            carefully crafted with love and attention to detail. From the moment our customers walk through 
+            the door, we aim to transport them to a world of indulgence and culinary delight.
+          </p>
+        </div>
+        
+        <div class="d-flex"><img src="images_bBuechle/storefront.jpg" alt="storefront" class="storefront"></div>
+        <!-- Photo by Niklas Jeromin: https://www.pexels.com/photo/cafeteria-in-a-brown-brick-building-10623540/ -->  
+      </div>  
+    </main>
+    <!-- Footer -->
+    <footer class="py-5 mb-0">
+      <div class="container">
+        <p class="float-end">
+          <a href="#" class="text-body-secondary">Back to top</a>
+        </p>
+        <p class="mb-1">University of Denver ICT 4510 Portfolio Assignment </p>
+        <p>Denver, CO 80208</p>
+        <p class="mb-0">&copy;2024 Becca Buechle </p>
+      </div>
+    </footer>
+  </body>
+</html>
